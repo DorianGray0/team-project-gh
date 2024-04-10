@@ -55,7 +55,7 @@ height: 379px; */
   margin-bottom: 14px;
 }
 .veg-img {
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   margin: 0 auto;
 }
 
@@ -66,8 +66,44 @@ height: 379px; */
   .vegetables-title {
     font-size: 64px;
     line-height: 100%;
+
+    max-width: 508px;
+  }
+  .vegetables-text {
+    margin-bottom: 50px;
+    /* max-width: 626px; */
+
+    font-size: 16px;
+    line-height: 125%;
+  }
+  .vegetables-list {
+    gap: 28px 20px;
+  }
+  .vegetables-item {
+    padding: 32px 30px;
+    /* width: 342px;
+    height: 379px; */
+
+    width: calc((100% - 20px) / 2);
+  }
+  .veg-item-subtitle {
+    font-size: 32px;
+  }
+  .veg-item-text {
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .vegetables {
+    padding: 100px;
+  }
+  .vegetables-title {
+    margin-bottom: 25px;
+  }
+  .vegetables-item {
+    padding: 32px;
+
+    width: calc((100% - 20px * 2) / 3);
+  }
 }
