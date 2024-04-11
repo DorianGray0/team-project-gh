@@ -1,6 +1,6 @@
 .vegetables {
   padding: 80px 0;
-  background-color: #7a3145;
+  background-color: var(--interact-color);
 }
 .vegetables-title {
   margin-bottom: 20px;
@@ -17,7 +17,7 @@
   gap: 20px;
 }
 .vegetables-item {
-  background-color: #fbfbfb;
+  background-color: var(--primary-title-color);
   border-radius: 40px;
   width: 1;
   padding: 32px 26px;
@@ -27,11 +27,11 @@
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.01em;
-  color: #7a3145;
+  color: var(--interact-color);
   margin-bottom: 12px;
 }
 .veg-item-text {
-  color: #141414;
+  color: var(--secondary-text-color);
   margin-bottom: 14px;
 }
 
