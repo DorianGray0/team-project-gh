@@ -1,0 +1,104 @@
+.hero {
+  background-color: var(--second-bgc);
+  padding-top: 100px;
+
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 45.5%;
+}
+
+@media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero@2x.jpg);
+  }
+}
+
+.header-wrap {
+  padding-bottom: 40px;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+@media screen and (max-width: 374px) {
+  .hero-title {
+    font-size: 12.8vw;
+  }
+}
+
+.hero-bgc {
+  height: 370px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 122px;
+
+    background-image: url(../img/hero-tab.jpg);
+    background-size: 100% 52.6%;
+  }
+
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../img/hero-tab@2x.jpg);
+    }
+  }
+
+  .header-wrap {
+    padding-bottom: 50px;
+  }
+
+  .hero-title {
+    margin-bottom: 25px;
+    font-size: 76px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 603px;
+  }
+
+  .hero-bgc {
+    height: 539px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 238px;
+
+    background-image: url(../img/hero-desctop.jpg);
+    background-position: right;
+    /* background-size: 52.6% 100%; */
+    background-size: 650px 800px;
+  }
+
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../img/hero-desctop@2x.jpg);
+    }
+  }
+
+  .hero > .container {
+    display: flex;
+  }
+
+  .header-wrap,
+  .hero-bgc {
+    flex-basis: calc((100%) / 2);
+  }
+
+  .hero-title {
+    max-width: 502px;
+    margin-bottom: 128px;
+  }
+
+  .hero-text {
+    max-width: 471px;
+  }
+}
