@@ -144,7 +144,8 @@ font-weight: 500;
 
     }
     .footer-nav-list {
-      
+      display: block;
+      margin-right: 20px;
     }
         
     .footer-nav-link {
@@ -178,6 +179,10 @@ font-weight: 500;
     .block-text{
       font-size: 18px;
     }
+    .block-item-text{
+         display: block;
+        margin-left: 250px;
+    }
                                  
     }
     
@@ -195,13 +200,19 @@ font-weight: 500;
         flex-wrap: wrap;
         flex-direction: column;
     }
+    .nav-container{
+
+    }
     .footer-nav-list{
-        
+
     }
   .footer-address{
 
     }
   .footer-address-list {
+    
+ }
+ .block-item-text{
     
  }
  
