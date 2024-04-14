@@ -81,6 +81,7 @@
 @media screen and (min-width: 1280px) {
   .hero > .container {
     display: flex;
+    max-width: 1280px;
   }
 
   .hero-box-subject {
