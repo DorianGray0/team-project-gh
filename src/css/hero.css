@@ -1,11 +1,9 @@
 .hero {
-  min-width: 320px;
   background-color: var(--second-bgc);
 }
-/* .container {
+.hero .container {
   padding: 0;
-  position: relative;
-} */
+} 
 
 .hero-box-subject {
   padding: 100px 20px 40px 20px;
@@ -42,9 +40,6 @@
       ),
       url('/img/mob/hero-mob-2x.webp');
   }
-}
-
-@media screen and (min-width: 375px) {
 }
 
 @media screen and (min-width: 768px) {
@@ -84,13 +79,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  /* .container {
-    max-width: 1280px;
-  } */
-
   .hero > .container {
     display: flex;
-    align-self: flex-start;
   }
 
   .hero-box-subject {
