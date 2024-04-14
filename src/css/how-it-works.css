@@ -41,7 +41,7 @@
 .heading-it-works {
   font-size: 28px;
   line-height: 1;
-  /* margin-top: 120px; */
+
   margin-bottom: 20px;
   color: var(--primary-title-color);
 }
@@ -109,7 +109,6 @@ ol.it-works-list {
   align-items: center;
   padding-left: 100px;
   position: relative;
-  /* padding: 12px 24px 12px 24px; */
 }
 
 .it-works-item-color {
@@ -130,6 +129,12 @@ ol.it-works-list {
 }
 
 .it-works-list {
+}
+
+@media screen and (max-width: 374px) {
+  .section-it-work {
+    background: linear-gradient(to bottom, #7a3145 141vw, #576f35 141vw);
+  }
 }
 
 @media screen and (min-width: 768px) {
