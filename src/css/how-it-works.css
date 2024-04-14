@@ -64,16 +64,6 @@ ol.it-works-list {
   counter-reset: number 0;
 }
 
-/* ol > li {
-  position: relative;
-  counter-increment: li;
-  padding-top: 0.5rem;
-  list-style: none;
-  border-radius: 15px;
-  min-width: 335px;
-  min-height: 76px;
-} */
-
 .it-works-item::before,
 .it-works-item::after {
   position: absolute;
@@ -83,20 +73,35 @@ ol.it-works-list {
 
 .it-works-item::before {
   content: counter(number);
-  left: 24px;
-  top: 12px;
+  left: 29px;
+  top: 50%;
+  transform: translateY(-50%);
   height: 48px;
   width: 48px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 5px solid rgba(122, 49, 69, 0.3);
+  /* outline: 5px solid rgba(122, 49, 69, 0.3); */
+  /* border: 5px solid rgba(122, 49, 69, 0.3); */
   background-color: var(--interact-color);
   font-weight: 600;
   font-size: 20px;
   line-height: 1;
   letter-spacing: -0.02em;
   color: var(--primary-title-color);
+}
+
+.it-works-item::after {
+  content: '';
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgba(122, 49, 69, 0.3);
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .it-works-item {
