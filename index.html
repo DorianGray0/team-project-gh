@@ -7,7 +7,7 @@
     <title>GreenHarvest</title>
     
     <script type="module" crossorigin src="/team-project-gh/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/team-project-gh/assets/index-bd327fc1.css">
+    <link rel="stylesheet" href="/team-project-gh/assets/index-54db3b04.css">
   </head>
   <body>
     <header class="header">
@@ -35,7 +35,7 @@
       </ul>
     </nav>
 
-    <button type="button" class="header-burger-menu">
+    <button type="button" class="header-burger-menu" data-modal-open>
       <svg class="header-burger-icon" width="32" height="32">
         <use href="/team-project-gh/assets/icons-695598b8.svg#icon-burger-menu-mob"></use>
       </svg>
@@ -44,10 +44,10 @@
     <button class="header-order-menu" type="button">Shop now</button>
   </div>
 
-  <div class="backdrop is-hidden">
+  <div class="backdrop is-hidden" data-modal>
     <div class="mob-menu">
       <div class="mob-menu-wrap">
-        <button class="close-modal">
+        <button class="close-modal" data-modal-close>
           <svg class="icon-close-modal" width="32" height="32">
             <use href="/team-project-gh/assets/icons-695598b8.svg#icon-close-mob"></use>
           </svg>
@@ -56,13 +56,13 @@
         <nav class="mob-menu-nav">
           <ul class="mob-menu-list">
             <li class="mob-menu-item">
-              <a href="" class="header-nav-link">How It Works</a>
+              <a href="#explanation" class="header-nav-link">How It Works</a>
             </li>
             <li class="mob-menu-item">
-              <a href="" class="header-nav-link">Vegetables</a>
+              <a href="#products" class="header-nav-link">Vegetables</a>
             </li>
             <li class="mob-menu-item">
-              <a href="" class="header-nav-link">Reviews</a>
+              <a href="#comments" class="header-nav-link">Reviews</a>
             </li>
           </ul>
         </nav>
@@ -499,7 +499,54 @@
   </div>
 </footer>
 
+    <div class="backdrop-order">
+  <div class="modal-order-blok-form">
+    <button class="order-close-modal" data-modal-close>
+      <svg class="icon-close-modal" width="26" height="26">
+        <use href="/team-project-gh/assets/icons-695598b8.svg#icon-close-mob"></use>
+      </svg>
+    </button>
+    <h3 class="order-form-subtitle">
+      Ordering <span class="order-part-one">from us</span> is quick and easy!
+      Fill out <span class="order-part-two">the form</span> below and we will
+      contact you !
+    </h3>
+    <form name="order-product" autocomplete="off" class="order-form">
+      <label class="form-label">
+        <input
+          type="text"
+          name="user-name"
+          placeholder="Full Name"
+          required
+          autocomplete="on"
+          class="order-input text"
+        />
+      </label>
+      <label class="form-label">
+        <input
+          type="email"
+          name="user-email"
+          placeholder="Email"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+          autocomplete="on"
+          class="order-input text"
+        />
+      </label>
+      <label class="form-label">
+        <textarea
+          name="user-comment"
+          placeholder="Comment"
+          class="order-form-area text"
+        ></textarea>
+      </label>
+      <button type="submit" class="order-btn text">Send</button>
+    </form>
+  </div>
+</div>
 
+
+    
     
   </body>
 </html>
