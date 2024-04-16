@@ -1,9 +1,9 @@
-.adver-section {
+.propose-section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.adver-text {
+.propose-text {
   color: #141414;
   opacity: 0;
   transition: all 500ms;
@@ -16,18 +16,18 @@
 }
 
 @media screen and (max-width: 374px) {
-  .adver-text {
+  .propose-text {
     font-size: 12.8vw;
   }
 }
 
-.span-adver {
+.span-propose {
   color: #fbfbfb;
   position: relative;
   display: block;
 }
 
-.span-adver::before {
+.span-propose::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -41,32 +41,32 @@
 }
 
 @media screen and (min-width: 768px) {
-  .adver-section {
+  .propose-section {
     padding: 100px 0;
   }
 
-  .adver-text {
+  .propose-text {
     font-size: 64px;
     line-height: 1.09;
   }
 
-  .span-adver::before {
+  .span-propose::before {
     width: calc(100% + 32px);
     height: 86px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .adver-text {
+  .propose-text {
     font-size: 76px;
     line-height: 1.05;
   }
 
-  .span-adver {
+  .span-propose {
     display: inline-block;
   }
 
-  .span-adver::before {
+  .span-propose::before {
     width: calc(100% + 26px);
   }
 }
