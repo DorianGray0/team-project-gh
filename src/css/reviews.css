@@ -11,6 +11,14 @@
   letter-spacing: -0.015em;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
+  opacity: 0;
+  transition: all 500ms;
+  transform: translateX(50px);
+}
+.reviews-logo.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
 }
 
 .reviews-customers {
@@ -19,6 +27,14 @@
 
 .reviews-text {
   color: var(--secondary-text-color);
+  opacity: 0;
+  transition: all 500ms;
+  transform: translateX(50px);
+}
+.reviews-text.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
 }
 
 .reviews-card-item {

@@ -23,11 +23,33 @@
 
 .header-wrap {
   padding-bottom: 40px;
+      
 }
 
 .hero-title {
   margin-bottom: 20px;
   line-height: 1;
+  opacity: 0;
+  transition: all 500ms;
+  transform: translateX(50px);
+}
+
+.hero-title.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
+}
+
+.hero-text {
+  opacity: 0;
+  transition: all 500ms;
+  transform: translateX(50px);
+}
+
+.hero-text.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
 }
 
 @media screen and (max-width: 374px) {

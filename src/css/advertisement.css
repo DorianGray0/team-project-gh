@@ -5,6 +5,14 @@
 
 .adver-text {
   color: #141414;
+  opacity: 0;
+  transition: all 500ms;
+  transform: translateX(50px);
+}
+.adver-text.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
 }
 
 @media screen and (max-width: 374px) {

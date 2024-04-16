@@ -33,6 +33,15 @@
   /* font-weight: 400; */
   color: var(--primary-title-color);
   margin-bottom: 40px;
+  opacity: 0;
+  transition: all 500ms;
+  transform: translateX(50px);
+}
+
+.it-work-text.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
 }
 
 .heading-it-works {
@@ -41,6 +50,15 @@
 
   margin-bottom: 20px;
   color: var(--primary-title-color);
+  opacity: 0;
+  transition: all 500ms;
+  transform: translateX(50px);
+}
+
+.heading-it-works.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0%);
 }
 
 .color-p {
