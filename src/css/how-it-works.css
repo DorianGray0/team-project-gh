@@ -6,9 +6,6 @@
   background: linear-gradient(to bottom, #7a3145 530px, #576f35 530px);
 }
 
-.conteiner-it-work {
-}
-
 .conteiner-img-it-work {
   margin-bottom: 120px;
   /* position: relative; */
@@ -133,9 +130,6 @@ ol.it-works-list {
   padding-right: 59px;
 }
 
-.it-works-list {
-}
-
 @media screen and (max-width: 374px) {
   .section-it-work {
     background: linear-gradient(to bottom, #7a3145 141vw, #576f35 141vw);
@@ -185,7 +179,7 @@ ol.it-works-list {
 
   .conteiner-it-work {
     display: flex;
-    padding: 0;
+    padding: 0 32px;
     gap: 200px;
   }
 
@@ -203,8 +197,11 @@ ol.it-works-list {
     margin-top: 0;
   }
 
-  .conteiner-img-it-work,
+  .conteiner-img-it-work {
+    flex-basis: calc((100% - 215px) / 2);
+  }
+
   .conteiner-list-it-work {
-    flex-basis: calc((100% - 200px) / 2);
+    flex-basis: calc((100% - 185px) / 2);
   }
 }

@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
-    <nav class="header-navigation">
-      <a href="./index.html" class="header-logo-link">
+    <nav aria-label="Product" class="header-navigation">
+      <a aria-label="Logo" href="./index.html" class="header-logo-link">
         <svg class="header-logo-icon" width="16" height="16">
           <use href="./img/icons.svg#icon-logo"></use>
         </svg>
@@ -23,7 +23,12 @@
       </ul>
     </nav>
 
-    <button type="button" class="header-burger-menu" data-modal-open>
+    <button
+      aria-label="Open"
+      type="button"
+      class="header-burger-menu"
+      data-modal-open
+    >
       <svg class="header-burger-icon" width="32" height="32">
         <use href="./img/icons.svg#icon-burger-menu-mob"></use>
       </svg>
@@ -35,7 +40,7 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="mob-menu">
       <div class="mob-menu-wrap">
-        <button class="close-modal" data-modal-close>
+        <button aria-label="Close" class="close-modal" data-modal-close>
           <svg class="icon-close-modal" width="32" height="32">
             <use href="./img/icons.svg#icon-close-mob"></use>
           </svg>
