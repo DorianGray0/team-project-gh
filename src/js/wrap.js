@@ -9,7 +9,7 @@ function onEntry(entry) {
 }
 
 let options = {
-  threshold: [0.5] };
+  threshold: [0.3] };
 let observer = new IntersectionObserver(onEntry, options);
 let title = document.querySelectorAll('.hero-title');
 let text = document.querySelectorAll('.hero-text');
@@ -22,7 +22,7 @@ let reviewslogo = document.querySelectorAll('.reviews-logo');
 let reviewstext = document.querySelectorAll('.reviews-text');
 let ordertitle = document.querySelectorAll('.order-title');
 let ordertext = document.querySelectorAll('.order-text');
-
+let vegetablesitem = document.querySelectorAll('.vegetables-item');
 for (let elm of title) {
   observer.observe(elm);
 }
@@ -54,5 +54,8 @@ for (let elm of ordertitle) {
   observer.observe(elm);
 }
 for (let elm of ordertext) {
+  observer.observe(elm);
+}
+for (let elm of vegetablesitem) {
   observer.observe(elm);
 }
