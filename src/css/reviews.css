@@ -13,12 +13,12 @@
   margin-bottom: 20px;
   opacity: 0;
   transition: all 500ms;
-  transform: translateX(50px);
+  transform: translateX(-100px);
 }
 .reviews-logo.element-show {
   opacity: 1;
   transition: all 1s;
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 
 .reviews-customers {
@@ -29,12 +29,12 @@
   color: var(--secondary-text-color);
   opacity: 0;
   transition: all 500ms;
-  transform: translateX(50px);
+  transform: translateX(-100px);
 }
 .reviews-text.element-show {
   opacity: 1;
   transition: all 1s;
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 
 .reviews-card-item {

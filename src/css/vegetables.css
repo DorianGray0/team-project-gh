@@ -6,13 +6,13 @@
   margin-bottom: 20px;
   opacity: 0;
   transition: all 500ms;
-  transform: translateX(50px);
+  transform: translateX(-100px);
 }
 
 .vegetables-title.element-show {
   opacity: 1;
   transition: all 1s;
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 .vegetables-title span {
   color: rgba(251, 251, 251, 0.3);
@@ -21,13 +21,13 @@
   margin-bottom: 32px;
   opacity: 0;
   transition: all 500ms;
-  transform: translateX(50px);
+  transform: translateX(-100px);
 }
 
 .vegetables-text.element-show {
   opacity: 1;
   transition: all 1s;
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 .vegetables-list {
   display: flex;

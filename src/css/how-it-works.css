@@ -35,13 +35,13 @@
   margin-bottom: 40px;
   opacity: 0;
   transition: all 500ms;
-  transform: translateX(50px);
+  transform: translateX(-100px);
 }
 
 .it-work-text.element-show {
   opacity: 1;
   transition: all 1s;
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 
 .heading-it-works {
@@ -51,13 +51,13 @@
   color: var(--primary-title-color);
   opacity: 0;
   transition: all 500ms;
-  transform: translateX(50px);
+  transform: translateX(-100px);
 }
 
 .heading-it-works.element-show {
   opacity: 1;
   transition: all 1s;
-  transform: translateX(0%);
+  transform: translateY(0%);
 }
 
 .color-p {
