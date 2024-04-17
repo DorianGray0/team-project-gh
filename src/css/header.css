@@ -127,16 +127,13 @@
 
   outline: transparent;
   transition: border-radius 250ms var(--cubic-regular),
-    background-color 250ms var(--cubic-regular),
-    transform 250ms var(--cubic-regular);
+    background-color 250ms var(--cubic-regular);
 }
 
 .close-modal:hover,
 .close-modal:focus {
   border-radius: 50%;
   background-color: var(--primary-text-color);
-
-  transform: scale(0.9);
 }
 
 .close-modal:active {
